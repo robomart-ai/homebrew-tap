@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
+# Installs the Robomart Command terminal client.
 class Robomart < Formula
-  desc "Robomart Command - agentic delivery from the terminal"
+  desc "Agentic delivery from the terminal"
   homepage "https://robomart.ai"
-  url "https://registry.npmjs.org/@robomart/command/-/command-1.1.0.tgz"
-  sha256 "11fe9e67527da00ffe9b36c68b96542ec2e442ac8460b43228ec67ccfe355f31"
-  version "1.1.0"
+  url "https://registry.npmjs.org/@robomart/command/-/command-1.1.1.tgz"
+  version "1.1.1"
+  sha256 "476136d25eef5cb7a30f459325474cf5a6ef7a979d6b99b21cff2042c5a2a8a2"
   license "Apache-2.0"
 
   depends_on :macos
@@ -13,6 +16,6 @@ class Robomart < Formula
   end
 
   test do
-    assert_match "1.1.0", shell_output("#{bin}/robomart --version")
+    assert_match "1.1.1", shell_output("#{bin}/robomart --version")
   end
 end
