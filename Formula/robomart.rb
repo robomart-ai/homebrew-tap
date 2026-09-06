@@ -4,9 +4,9 @@
 class Robomart < Formula
   desc "Agentic commerce and delivery from the terminal"
   homepage "https://robomart.ai"
-  url "https://registry.npmjs.org/@robomart/command/-/command-1.2.2.tgz"
-  version "1.2.2"
-  sha256 "25fa73e09181d46e2544c49b061dbae1cd7d2146b0443147516db7dcd0460f15"
+  url "https://registry.npmjs.org/@robomart/command/-/command-1.2.3.tgz"
+  version "1.2.3"
+  sha256 "336b6262569830a13a3d4888ea3ecfcd1c68f5008f3b0ac2d78faff593a2a10d"
   license "Apache-2.0"
 
   depends_on :macos
@@ -17,6 +17,6 @@ class Robomart < Formula
   end
 
   test do
-    assert_match "1.2.2", shell_output("#{bin}/robomart --version")
+    assert_match "1.2.3", shell_output("#{bin}/robomart --version")
   end
 end
